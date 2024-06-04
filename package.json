@@ -1,0 +1,15 @@
+{
+  "name": "node-practies-2",
+  "version": "1.0.0",
+  "description": "simple first project ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "diwash tharu",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}
