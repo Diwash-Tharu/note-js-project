@@ -10,8 +10,18 @@ dotenv.config({
     path: "../env"
 })
 
-connectDB();
+connectDB()
+.then(() => {
+    console.log("Connected to the database");
+    app.listen(process.env.PORT || 8000, () => {
+        console.log(`server is running at the port : ${process.env.PORT}`);
+    })
+})
 
+.catch((err) => {
+    console.log("Error connecting to the database", err);
+    process.exit();
+  })
 
 // another approach of the linking of the code
 
